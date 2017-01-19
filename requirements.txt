@@ -1,0 +1,5 @@
+pyzmq==15.3.0
+-e git+https://github.com/HeisenCore/jsonrpclib.git#egg=jsonrpclib_heisen-0.1.13
+-e git+https://github.com/HeisenCore/txjsonrpc.git#egg=txJSON_RPC_heisen-0.4.5
+-e git+https://github.com/HeisenCore/heisen.git#egg=heisen
+
