@@ -1,6 +1,7 @@
 # coding: utf-8
 
 import os
+import logging
 
 APP_NAME = 'test'
 
@@ -22,3 +23,18 @@ DATABASES = {
 }
 
 AP_DATABASE = 'test'
+
+LOGGERS = {
+    'test_log': {
+        'format': 'basic',
+        'level': logging.DEBUG
+    },
+}
+
+EMAIL_TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+EMAIL_BACKEND = 'debug'         # shoud be either debug or smtp
+# EMAIL_HOST = 'mail.airport.ir'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'fidsthr'
+# EMAIL_HOST_PASSWORD = '1nfids1394'
